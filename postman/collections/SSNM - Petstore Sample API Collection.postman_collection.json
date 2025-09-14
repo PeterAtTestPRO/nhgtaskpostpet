@@ -8,18 +8,71 @@
 	},
 	"item": [
 		{
+			"name": "Pet",
+			"item": [
+				{
+					"name": "Pet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 47,\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"Ozzy\"\n    },\n    \"name\": \"maine goon\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 14,\n            \"name\": \"string\"\n        }\n    ],\n    \"status\": \"available\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pet",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pet by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/pet/47",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pet",
+								"47"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": []
+		},
+		{
 			"name": "Pet by ID",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/pet/1",
+					"raw": "{{baseUrl}}/pet/47",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"pet",
-						"1"
+						"47"
 					]
 				}
 			},
@@ -35,7 +88,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"id\": 47,\n  \"category\": {\n    \"id\": 1,\n    \"name\": \"Ozzy\"\n  },\n  \"name\": \"cat\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 14,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+					"raw": "{\n    \"id\": 47,\n    \"category\": {\n        \"id\": 1,\n        \"name\": \"Ozzy\"\n    },\n    \"name\": \"cat\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 14,\n            \"name\": \"string\"\n        }\n    ],\n    \"status\": \"available\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"

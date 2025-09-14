@@ -1,0 +1,4 @@
+postman/environments/*local*.json
+postman/environments/*secrets*.json
+*.postman_globals.json
+.env

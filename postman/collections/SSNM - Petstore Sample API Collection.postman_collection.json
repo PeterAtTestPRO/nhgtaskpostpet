@@ -4,14 +4,14 @@
 		"name": "SSNM - Petstore Sample API Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "48427485",
-		"_collection_link": "https://www.postman.com/peterattestpro-4597909/ssnm-petstore-sample-api/collection/qcf5xik/snm-petstore-sample-api-collection?action=share&source=collection_link&creator=48427485"
+		"_collection_link": "https://www.postman.com/peterattestpro-4597909/ssnm-petstore-sample-api/collection/qcf5xik/ssnm-petstore-sample-api-collection?action=share&source=collection_link&creator=48427485"
 	},
 	"item": [
 		{
 			"name": "Pet",
 			"item": [
 				{
-					"name": "Pet",
+					"name": "Update Pet",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -37,18 +37,18 @@
 					"response": []
 				},
 				{
-					"name": "Pet by ID",
+					"name": "Delete Pet",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/pet/47",
+							"raw": "{{baseUrl}}/pet/{{petId}}",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"pet",
-								"47"
+								"{{petId}}"
 							]
 						}
 					},
@@ -60,7 +60,7 @@
 			"name": "User",
 			"item": [
 				{
-					"name": "User",
+					"name": "Create User",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -86,18 +86,18 @@
 					"response": []
 				},
 				{
-					"name": "User",
+					"name": "Delete User",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/user/SimonSaysNoMore",
+							"raw": "{{baseUrl}}/user/{{userName}}",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"user",
-								"SimonSaysNoMore"
+								"{{userName}}"
 							]
 						}
 					},
@@ -106,25 +106,25 @@
 			]
 		},
 		{
-			"name": "Pet by ID",
+			"name": "Get Pet by Id",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/pet/47",
+					"raw": "{{baseUrl}}/pet/{{petId}}",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"pet",
-						"47"
+						"{{petId}}"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Pet",
+			"name": "Add Pet",
 			"request": {
 				"auth": {
 					"type": "noauth"
